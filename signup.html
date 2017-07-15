@@ -16,7 +16,10 @@
   <div id="mockupSection">
     <section class="container">
       <div class="row">
-        <div class="horizontal-break"> </div>
+        <div class="signup-title">
+          <h1>What do you get?</h1>
+          <div class="horizontal-break"> </div>
+        </div>
       </div>
     </section>
     <section class="container">
@@ -31,36 +34,47 @@
     </section>
   </div>
   <div id="signupSection">
-    <h1>Sign up!</h1>
-    <hr/>
-    <p>Are you sick of your morning commute? Ever wondered how it could be improved?</p>
-    <p>We here at Tim110 look forward to optimising your travel to save you time, effort, and money.</p>
-    <p>Using both a flexible departure and wake up time, we can help tackle congestion in Brisbane. </p>
-    <p>If you are excited to try hear more about our flexible transit app, sign up below!</p>
+    <section class="container">
+      <div class="row">
+        <div class="signup-title">
+          <h1>Sign up</h1>
+          <div class="horizontal-break"> </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row">
+        <p>Are you sick of your morning commute? Ever wondered how it could be improved?</p>
+        <p>We here at Tim110 look forward to optimising your travel to save you time, effort, and money.</p>
+        <p>Using both a flexible departure and wake up time, we can help tackle congestion in Brisbane. </p>
+        <p>If you are excited to try hear more about our flexible transit app, sign up below!</p>
+      </div>
 
-    <form action="https://formspree.io/cityhack.tim110@gmail.com" method="POST">
-      <div class="form-group">
-        <label for="firstname">First name:</label>
-        <input class="form-control" type="text" name="firstname" id="firstname" />
-      </div>
-      <div class="form-group">
-        <label for="lastname">Last name:</label>
-        <input class="form-control" type="text" name="lastname" id="lastname" />
-      </div>
-      <div class="form-group">
-        <label for="email">Email address:</label>
-        <input class="form-control" type="text" name="email" id="email" />
-      </div>
-      <div class="form-group">
-        <label for="suburbLive">Suburb you live (optional):</label>
-        <input class="form-control" type="text" name="suburbLive" id="suburbLive" />
-      </div>
-      <div class="form-group">
-        <label for="suburbWork">Suburb you work (optional):</label>
-        <input class="form-control" type="text" name="suburbWork" id="suburbWork" />
-      </div>
-      <button type="submit" class="btn btn-default">Register</button>
-    </form>
+      <hr/>
+
+      <form action="https://formspree.io/cityhack.tim110@gmail.com" method="POST">
+        <div class="form-group">
+          <label for="firstname">First name:</label>
+          <input class="form-control" type="text" name="firstname" id="firstname" />
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last name:</label>
+          <input class="form-control" type="text" name="lastname" id="lastname" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input class="form-control" type="text" name="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="suburbLive">Suburb you live (optional):</label>
+          <input class="form-control" type="text" name="suburbLive" id="suburbLive" />
+        </div>
+        <div class="form-group">
+          <label for="suburbWork">Suburb you work (optional):</label>
+          <input class="form-control" type="text" name="suburbWork" id="suburbWork" />
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>    </section>
   </div>
   </body>
 </html>
