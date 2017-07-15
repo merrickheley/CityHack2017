@@ -7,6 +7,9 @@ body {
     padding-right: 5px;
 }
 
+.blink-me {animation: blinker 1s linear infinite;}
+@keyframes blinker {50% { opacity: 0; }}
+
 #splashSection {
     /* The image used */
     background-image: url("../images/signup-back1.jpg");
@@ -97,7 +100,6 @@ a:hover {
 
 .signup-header-link {
     color: white;
-    font-family: "Open Sans";
     line-height: 48px;
     letter-spacing: -1px;
     font-weight: 700;
@@ -113,7 +115,6 @@ a:hover {
 
 .signup-title {
     color: #222222;
-    font-family: "Open Sans";
     line-height: 48px;
     letter-spacing: -1px;
     font-weight: 700;
