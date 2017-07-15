@@ -17,7 +17,16 @@
 }
 
 #signupSection {
-    text-align: center;
+
+}
+
+.signup-form {
+    max-width: 800px;
+    font-size: 16px
+}
+
+.signup-text {
+
 }
 
 .signup-title {
@@ -29,6 +38,7 @@
     font-style: normal;
     font-size: 32px;
     padding: 48px 0 24px 0;
+    text-align: center;
 }
 
 .horizontal-break {
