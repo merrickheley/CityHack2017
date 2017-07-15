@@ -7,8 +7,22 @@ body {
     padding-right: 5px;
 }
 
+/* from http://jsfiddle.net/umz8t/6490/ */
 .blink-me {animation: blinker 1s linear infinite;}
 @keyframes blinker {50% { opacity: 0; }}
+
+.gray-background {
+    background-color: #eee;
+}
+
+.fake-phone {
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 3em;
+    border: 3px solid gray;
+    box-shadow: 5px 5px 2px darkgrey;
+    min-height: 99vh;
+}
 
 #splashSection {
     /* The image used */
