@@ -20,6 +20,12 @@
 
 }
 
+#howItWorksSection {
+    /*color: #cccccc;*/
+    color: white;
+    text-align: center;
+}
+
 .signup-form {
     max-width: 800px;
     font-size: 16px
@@ -61,6 +67,10 @@
     display: inline-block;
 }
 
+.howitworks-title {
+    margin-top: 72px;
+}
+
 .signup-title {
     color: #222222;
     font-family: "Open Sans";
@@ -71,6 +81,14 @@
     font-size: 32px;
     padding: 48px 0 24px 0;
     text-align: center;
+}
+
+.horizontal-break-white {
+    background-color: #000;
+    height: 5px;
+    width: 100px;
+    margin: 20px auto 25px;
+    display: block;
 }
 
 .horizontal-break {
