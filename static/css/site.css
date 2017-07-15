@@ -12,6 +12,26 @@
     background-size: cover;
 }
 
+.signup-title {
+
+}
+
+.horizontal-break {
+    background-color: #222222;
+    height: 5px;
+    width: 100px;
+    margin: 20px auto 25px;
+    display: block;
+}
+
+.mockup-image-container {
+    text-align: center;
+}
+
+.mockup-image {
+    width: 90%;
+}
+
 #howItWorksSection { 
     /* The image used */
     background-image: url("../images/brisbane-grayscale.jpg");
