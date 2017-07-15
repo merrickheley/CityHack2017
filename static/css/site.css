@@ -1,10 +1,15 @@
 body {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
+}
+
+.row {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #splashSection {
     /* The image used */
-    background-image: url("../images/sleeping-woman-sun.jpg");
+    background-image: url("../images/signup-back1.jpg");
 
     /* Set a specific height */
     height: 100%; 
@@ -16,20 +21,41 @@ body {
     background-size: cover;
 }
 
+#howItWorksSection {
+    /* The image used */
+
+    background-image: url("../images/signup-back2.jpg");
+
+
+    /* Set a specific height */
+    min-height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #cccccc;
+    /*
+    color: white;
+     */
+    text-align: center;
+}
+
+#howItWorksSection .glyphicon, #howItWorksSection .lnr {
+    font-size: 48px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
 #mockupSection {
     text-align: center;
 }
 
 #signupSection {
 
-}
-
-#howItWorksSection {
-    color: #cccccc;
-    /*
-    color: white;
-     */
-    text-align: center;
 }
 
 .signup-form {
@@ -47,13 +73,6 @@ body {
 
 .signup-text {
 
-}
-
-#howItWorksSection .glyphicon, #howItWorksSection .lnr {
-    font-size: 48px;
-    padding: 15px;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 15px;
 }
 
 a:hover {
@@ -126,25 +145,12 @@ a:hover {
 
 .mockup-image {
     width: 90%;
+    padding: 10px 0;
 }
 
 .signup-header {
     background-color: rgba(0,0,0,0.66);
     height: 66px;
-}
-
-#howItWorksSection { 
-    /* The image used */
-    background-image: url("../images/brisbane-sun.jpg");
-
-    /* Set a specific height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #footer {
@@ -172,6 +178,10 @@ h2#title-h2 {
 .row-form {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.modal-footer {
+    margin-top: 60px;
 }
 
 .bs-callout {

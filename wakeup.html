@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Settings</title>
+    <title>Wake up</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./static/css/bootstrap.min.css" type="text/css"/>
@@ -12,48 +12,29 @@
   <body>
     <div class="col-xs-4 col-xs-offset-4">
 
-    <h1 class="text-center">Change Settings</h1>
+    <h1 class="text-center">Wake up!</h1>
     <hr/>
     <div class="row row-form col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
-    <label for="from">I am coming from: </label>
-    <select class="form-control" id="from">
-        <option>City</option>
-        <option>Windsor</option>
-    </select>
+        <h4>The time is 7:30 A.M.</h4>
+        <h4>Your leave time is 8:00 A.M.</h4>
     </div>
     <div class="row row-form col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
-    <label for="to">Where I need to go: </label>
-    <select class="form-control" id="to">
-        <option>City</option>
-        <option>Windsor</option>
-    </select>
+      <!-- google map -->
+      <iframe width="100%" height="280" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=place_id:Ei8yNDEvNDQgR3JhbnRzb24gU3QsIFdpbmRzb3IgUUxEIDQwMzAsIEF1c3RyYWxpYQ&destination=place_id:ChIJ6wdrT69QkWsR2Tmu8k7gDTo&key=AIzaSyCDM70kNxRll2AU29FlD_z5xDwH4Bp5UEc" allowfullscreen></iframe>
     </div>
     <div class="row row-form col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
-    <label for="readyTime">To get ready, it takes: </label>
-    <select class="form-control" id="readyTime">
-        <option>5 Minutes</option>
-        <option>10 Minutes</option>
-    </select>
-    </div>
-    <div class="row row-form col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
-    <label for="arriveRange">I'm happy to arrive at: </label>
-    <select class="form-control" id="arriveRange">
-        <option>6a.m. to 8a.m.</option>
-        <option>7a.m. to 10a.m.</option>
-    </select>
-    </div>
-
+        <h4>You will arrive at 8:34 A.M.</h4>
+    </div> 
     <div class="row row-form col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 bs-callout bs-callout-danger">
         <h4>Obstruction to your route:</h4>
         <p>Bleep Bloop, there has been a crash</p>
     </div>
-
     <div class="row row-form col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
         <div class="col-md-6 col-sm-6 col-xs-6">
-            <a href="./index.html" class="btn btn-default">Cancel Changes</a>
+            <a href="#" class="btn btn-default">Snooze</a>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6">
-            <a href="#" class="btn btn-primary pull-right">Confirm Changes</a>
+            <a href="./index.html" class="btn btn-primary pull-right">Okay, I woke up!</a>
         </div>
     </div>
 
