@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="./static/css/site.css" type="text/css"/>
+  </head>
+  <body>
+    <h1 class="text-center">Change Settings</h1>
+    <hr/>
+    <div class="row col-md-8 col-md-offset-2">
+    <label for="from">I am coming from: </label>
+    <select class="form-control" id="from">
+        <option>City</option>
+        <option>Windsor</option>
+    </select>
+    </div>
+    <div class="row col-md-8 col-md-offset-2">
+    <label for="to">Where I need to go: </label>
+    <select class="form-control" id="to">
+        <option>City</option>
+        <option>Windsor</option>
+    </select>
+    </div>
+    <div class="row col-md-8 col-md-offset-2">
+    <label for="readyTime">To get ready, it takes: </label>
+    <select class="form-control" id="readyTime">
+        <option>5 Minutes</option>
+        <option>10 Minutes</option>
+    </select>
+    </div>
+    <div class="row col-md-8 col-md-offset-2">
+    <label for="arriveRange">I'm happy to arrive at: </label>
+    <select class="form-control" id="arriveRange">
+        <option>6a.m. to 8a.m.</option>
+        <option>7a.m. to 10a.m.</option>
+    </select>
+    </div>
+
+    <div class="row col-md-8 col-md-offset-2 col-sm-12 bs-callout bs-callout-danger">
+    <h4>Obstruction to your route:</h4>
+    <p>Bleep Bloop, there has been a crash</p>
+    </div>
+
+    <div class="row col-md-8 col-md-offset-2 col-sm-12">
+        <div class="col-md-6">
+            <button type="text" class="btn btn-default">Confirm Changes</button>
+        </div>
+        <div class="col-md-6">
+            <button type="text" class="btn btn-primary pull-right">Cancel Changes</button>
+        </div>
+    </div>
+  </body>
+</html>
