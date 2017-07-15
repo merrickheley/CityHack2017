@@ -85,23 +85,9 @@ h1#logo-h1 {
     font-size: 22px;
 }
 
-div#title-div {
-    margin: auto;
-    position: relative;
-    z-index: 11;
-    height: 100%;
-    max-width: 100%;
-    width: 750px;
-}
-
 h2#title-h2 {
     text-align: center;
     color: white;
-    top: auto;
-    bottom: 30%;
-    left: 0%;
-    position: absolute;
-    z-index: 10;
+    padding-top: 30%;
     font-size: 40px;
-    width: 100%;
 }
