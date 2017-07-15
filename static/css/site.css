@@ -4,7 +4,7 @@ body {
 
 #splashSection {
     /* The image used */
-    background-image: url("../images/sleeping-woman-sun.jpg");
+    background-image: url("../images/signup-back1.jpg");
 
     /* Set a specific height */
     height: 100%; 
@@ -135,7 +135,7 @@ a:hover {
 
 #howItWorksSection { 
     /* The image used */
-    background-image: url("../images/brisbane-sun.jpg");
+    background-image: url("../images/signup-back2.jpg");
 
     /* Set a specific height */
     height: 100%; 
