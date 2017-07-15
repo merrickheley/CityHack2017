@@ -2,6 +2,11 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+.row {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 #splashSection {
     /* The image used */
     background-image: url("../images/signup-back1.jpg");
