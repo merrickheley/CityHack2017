@@ -16,20 +16,40 @@ body {
     background-size: cover;
 }
 
+#howItWorksSection {
+    /* The image used */
+
+    background-image: url("../images/signup-back2.jpg");
+
+
+    /* Set a specific height */
+    min-height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: repeat-y;
+
+    color: #cccccc;
+    /*
+    color: white;
+     */
+    text-align: center;
+}
+
+#howItWorksSection .glyphicon, #howItWorksSection .lnr {
+    font-size: 48px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
 #mockupSection {
     text-align: center;
 }
 
 #signupSection {
 
-}
-
-#howItWorksSection {
-    color: #cccccc;
-    /*
-    color: white;
-     */
-    text-align: center;
 }
 
 .signup-form {
@@ -47,13 +67,6 @@ body {
 
 .signup-text {
 
-}
-
-#howItWorksSection .glyphicon, #howItWorksSection .lnr {
-    font-size: 48px;
-    padding: 15px;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 15px;
 }
 
 a:hover {
@@ -132,20 +145,6 @@ a:hover {
 .signup-header {
     background-color: rgba(0,0,0,0.66);
     height: 66px;
-}
-
-#howItWorksSection { 
-    /* The image used */
-    background-image: url("../images/signup-back2.jpg");
-
-    /* Set a specific height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #footer {
