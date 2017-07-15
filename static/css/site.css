@@ -7,6 +7,9 @@ body {
     padding-right: 5px;
 }
 
+.blink-me {animation: blinker 1s linear infinite;}
+@keyframes blinker {50% { opacity: 0; }}
+
 #splashSection {
     /* The image used */
     background-image: url("../images/signup-back1.jpg");
