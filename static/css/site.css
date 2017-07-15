@@ -78,3 +78,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+h1#logo-h1 {
+    text-align: center;
+    font-weight: 350;
+    font-size: 22px;
+}
+
+h2#title-h2 {
+    text-align: center;
+    color: white;
+    padding-top: 30%;
+    font-size: 40px;
+}
