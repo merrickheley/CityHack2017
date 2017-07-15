@@ -1,6 +1,10 @@
-#splashSection { 
+body {
+    font-family: "Open Sans";
+}
+
+#splashSection {
     /* The image used */
-    background-image: url("../images/sleeping-woman-grayscale.jpg");
+    background-image: url("../images/sleeping-woman-sun.jpg");
 
     /* Set a specific height */
     height: 100%; 
@@ -21,8 +25,10 @@
 }
 
 #howItWorksSection {
-    /*color: #cccccc;*/
+    color: #cccccc;
+    /*
     color: white;
+     */
     text-align: center;
 }
 
@@ -41,6 +47,18 @@
 
 .signup-text {
 
+}
+
+#howItWorksSection .glyphicon, #howItWorksSection .lnr {
+    font-size: 48px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.signup-header-link:hover > a {
+    color: #f27f68!important;
 }
 
 .signup-header-link a {
@@ -137,7 +155,7 @@
     border-top: 1px solid #3c3c3c;
 }
 
-h1#logo-h1 {
+h1.logo-h1 {
     font-size: 22px;
 }
 
