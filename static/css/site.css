@@ -84,6 +84,11 @@
     width: 90%;
 }
 
+.signup-header {
+    background-color: rgba(0,0,0,0.5);
+    height: 66px;
+}
+
 #howItWorksSection { 
     /* The image used */
     background-image: url("../images/brisbane-grayscale.jpg");
@@ -116,6 +121,6 @@ h1#logo-h1 {
 h2#title-h2 {
     text-align: center;
     color: white;
-    padding-top: 30%;
+    padding-top: 22.5vh;
     font-size: 40px;
 }
