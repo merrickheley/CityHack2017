@@ -37,6 +37,25 @@
 
 }
 
+.signup-header-link a {
+    color: white;
+}
+
+.signup-header-link h1 {
+    text-align: left;
+}
+
+.signup-header-link {
+    color: white;
+    font-family: "Open Sans";
+    line-height: 48px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    text-align: left;
+}
+
 .signup-title {
     color: #222222;
     font-family: "Open Sans";
@@ -80,7 +99,6 @@
 }
 
 h1#logo-h1 {
-    text-align: center;
     font-weight: 350;
     font-size: 22px;
 }
