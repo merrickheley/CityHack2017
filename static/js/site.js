@@ -100,9 +100,9 @@ function initMap() {
 		if (!!route) {
 			directionsDisplay.setDirections(route);
 			
-			// route.routes[0].legs[0].arrival_time
-			// route.routes[0].legs[0].departure_time
-			// route.routes[0].legs[0].duration.text
+			localStorage.setItem("arriveTime", route.routes[0].legs[0].arrival_time.text);
+			localStorage.setItem("leaveTime", route.routes[0].legs[0].departure_time.text);
+			localStorage.setItem("duration", route.routes[0].legs[0].duration.text.text);
 		}
 	});
 
@@ -110,6 +110,12 @@ function initMap() {
 }
 $(document).ready(function() {
 	
+	if (localStorage.getItem("arriveTime")) {
+		$('#arriveTime').text(localStorage.getItem("arriveTime"));
+	}
+	if (localStorage.getItem("leaveTime")) {
+		$('#leaveTime').text(localStorage.getItem("leaveTime"));
+	}
 });
 
 google.maps.event.addDomListener(window, 'load', initMap);
