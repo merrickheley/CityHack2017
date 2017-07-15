@@ -51,6 +51,9 @@ body {
 
 #howItWorksSection .glyphicon, #howItWorksSection .lnr {
     font-size: 48px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
 }
 
 a:hover {
@@ -132,7 +135,7 @@ a:hover {
 
 #howItWorksSection { 
     /* The image used */
-    background-image: url("../images/brisbane-grayscale.jpg");
+    background-image: url("../images/brisbane-sun.jpg");
 
     /* Set a specific height */
     height: 100%; 
