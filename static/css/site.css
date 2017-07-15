@@ -98,8 +98,18 @@
     background-size: cover;
 }
 
+#footer {
+    background-color: #222222;
+    color: #999999;
+    padding: 10px;
+}
+
+.footer-wrap {
+    padding: 15px;
+    border-top: 1px solid #3c3c3c;
+}
+
 h1#logo-h1 {
-    font-weight: 350;
     font-size: 22px;
 }
 
