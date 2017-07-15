@@ -1,5 +1,5 @@
 body {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 #splashSection {
@@ -28,7 +28,8 @@ body {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: top;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     color: #cccccc;
     /*
