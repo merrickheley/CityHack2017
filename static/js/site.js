@@ -14,8 +14,8 @@ var db = {
 		"min": 0,
 	},
 	"finalTime": {
-		"hour": 9,
-		"min": 0,
+		"hour": 8,
+		"min": 30,
 	},
 };
 
@@ -102,7 +102,23 @@ function initMap() {
 	minimiseRoute(gStartPos, gFinalPos, gStartTime, gFinalTime, function (route) {
 		if (!!route) {
 			if(document.getElementById('map') !== null) {
-				directionsDisplay.setDirections(route);
+				if($('#secondViewPage').length) {
+					directionsService.route({
+						origin: gStartPos,
+						destination: gFinalPos,
+						travelMode: google.maps.TravelMode.TRANSIT,
+						transitOptions: {
+							arrivalTime: new Date(gFinalTime - 20*minute),
+						}
+					}, function(dirResult, dirStatus) {
+					if (dirStatus == google.maps.DirectionsStatus.OK) {
+						directionsDisplay.setDirections(dirResult);
+					}
+					console.log(dirStatus)
+					});
+				} else {
+					directionsDisplay.setDirections(route);
+				}
 			}
 			
 			localStorage.setItem("arriveTime", route.routes[0].legs[0].arrival_time.text);

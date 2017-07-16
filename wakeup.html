@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./static/css/site.css" type="text/css"/>
     <script type="application/javascript" src="./static/js/jquery-3.2.1.js"></script>
     <script type="application/javascript" src="./static/js/bootstrap.js"></script>
+    <script type="application/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDM70kNxRll2AU29FlD_z5xDwH4Bp5UEc"></script>
     <script type="application/javascript" src="./static/js/site.js"></script>
 </head>
 <body class="gray-background">
@@ -21,7 +22,8 @@
     </div>
     <div class="row row-form col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
         <!-- google map -->
-        <iframe width="100%" height="280" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=place_id:Ei8yNDEvNDQgR3JhbnRzb24gU3QsIFdpbmRzb3IgUUxEIDQwMzAsIEF1c3RyYWxpYQ&destination=place_id:ChIJ6wdrT69QkWsR2Tmu8k7gDTo&key=AIzaSyCDM70kNxRll2AU29FlD_z5xDwH4Bp5UEc" allowfullscreen></iframe>
+        <div id="map" style="width: 100%; height: 280;"></div>
+        <span id="secondViewPage"></span>
     </div>
     <!--
     <div class="row row-form col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
