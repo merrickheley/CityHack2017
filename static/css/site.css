@@ -7,9 +7,36 @@ body {
     padding-right: 5px;
 }
 
+.h1 {
+    font-size: 36px;
+}
+
 /* from http://jsfiddle.net/umz8t/6490/ */
 .blink-me {animation: blinker 1s linear infinite;}
 @keyframes blinker {50% { opacity: 0; }}
+
+/* https://codepen.io/thetallweeks/pen/yybGra */
+.loading-container {
+    min-width: 1.25em;
+    display: inline-block;
+    text-align: left;
+}
+.loading {
+
+}
+.loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 900ms infinite;
+    animation: ellipsis steps(4,end) 900ms infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+    position: relative;
+    top: 5px;
+}
+@keyframes ellipsis {to {width: 1.25em;}}
+@-webkit-keyframes ellipsis {to {width: 1.25em;}}
 
 .gray-background {
     background-color: #eee;
@@ -205,7 +232,7 @@ h2#title-h2 {
 }
 
 .modal-footer {
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .bs-callout {
