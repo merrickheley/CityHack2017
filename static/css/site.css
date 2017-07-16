@@ -11,6 +11,31 @@ body {
     font-size: 36px;
 }
 
+.fadein-2 {
+    animation: fadein2 1s;
+    -webkit-animation: fadein2 1s;
+}
+.fadein-3 {
+    animation: fadein3 1.5s;
+    -webkit-animation: fadein3 1.5s;
+}
+@keyframes fadein2 { 0% {opacity:0;} 50% {opacity:0;} 100% {opacity:1;} }
+@-webkit-keyframes fadein3 { 0% {opacity:0;} 66% {opacity:0;} 100% {opacity:1;} }
+
+.blink-modal {
+ -webkit-animation: blinkmodal 1s infinite;
+  animation:        blinkmodal 1s infinite;
+}
+
+@-webkit-keyframes blinkmodal {
+0%, 49% {
+    background-color: rgb(255,255,255);
+}
+50%, 100% {
+    background-color: rgb(255,235,235);
+}
+}
+
 /* from http://jsfiddle.net/umz8t/6490/ */
 .blink-slow {animation: blinker 1.50s linear infinite;}
 .blink-fast {animation: blinker 0.75s linear infinite;}
