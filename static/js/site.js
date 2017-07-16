@@ -44,7 +44,7 @@ function minimiseRoute(startPos, finalPos, startTime, finalTime, finalCallback) 
 					'Directions request failed due to ' + dirStatus
 				);
 			}
-						
+			
 			window.setTimeout(function () {
 					minimiseRoute(startPos, finalPos, 
 						new Date(startTime.getTime() + 10*minute), 
@@ -111,10 +111,15 @@ function initMap() {
 							arrivalTime: new Date(gFinalTime - 20*minute),
 						}
 					}, function(dirResult, dirStatus) {
-					if (dirStatus == google.maps.DirectionsStatus.OK) {
-						directionsDisplay.setDirections(dirResult);
-					}
-					console.log(dirStatus)
+						if (dirStatus == google.maps.DirectionsStatus.OK) {
+							directionsDisplay.setDirections(dirResult);
+						}
+						console.log(dirStatus)
+						var marker = new google.maps.Marker({
+							position: new google.maps.LatLng(db.startPos.lat-0.004, db.startPos.lon-0.0015),
+							map: map,
+							title: 'Crash!'
+						});
 					});
 				} else {
 					directionsDisplay.setDirections(route);
