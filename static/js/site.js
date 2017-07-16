@@ -83,22 +83,27 @@ function initMap() {
 		db.finalTime.hour, db.finalTime.min, 0, 0
 	);
 	
-	map = new google.maps.Map(document.getElementById('map'), {
-		center: gStartPos,
-		zoom: 14
-	});
-	// Instantiate a directions service.
+	if (document.getElementById('map') !== null) {
+		map = new google.maps.Map(document.getElementById('map'), {
+			center: gStartPos,
+			zoom: 14
+		});
+
+		directionsDisplay = new google.maps.DirectionsRenderer({
+			map: map,
+			options: {
+				suppressMarkers: true,
+			}
+		});
+	}
+
 	directionsService = new google.maps.DirectionsService;
-	directionsDisplay = new google.maps.DirectionsRenderer({
-		map: map,
-		options: {
-			suppressMarkers: true,
-		}
-	});
-	
+
 	minimiseRoute(gStartPos, gFinalPos, gStartTime, gFinalTime, function (route) {
 		if (!!route) {
-			directionsDisplay.setDirections(route);
+			if(document.getElementById('map') !== null) {
+				directionsDisplay.setDirections(route);
+			}
 			
 			localStorage.setItem("arriveTime", route.routes[0].legs[0].arrival_time.text);
 			localStorage.setItem("leaveTime", route.routes[0].legs[0].departure_time.text);
@@ -106,8 +111,8 @@ function initMap() {
 		}
 	});
 
-
 }
+
 $(document).ready(function() {
 	
 	if (localStorage.getItem("arriveTime")) {
@@ -116,6 +121,19 @@ $(document).ready(function() {
 	if (localStorage.getItem("leaveTime")) {
 		$('#leaveTime').text(localStorage.getItem("leaveTime"));
 	}
+
+	// Save items from the settings page
+	// from, to, readyTime, arriveRange, sleepHours, notifications
+	$('#confirmChangeSettings').click(function(e) {
+		e.preventDefault();
+		var href = $( this ).attr( "href" );
+
+		localStorage.setItem("","")
+
+		
+		location.href = href;
+	})
+
 });
 
 google.maps.event.addDomListener(window, 'load', initMap);
