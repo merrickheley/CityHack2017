@@ -12,7 +12,8 @@ body {
 }
 
 /* from http://jsfiddle.net/umz8t/6490/ */
-.blink-me {animation: blinker 1s linear infinite;}
+.blink-slow {animation: blinker 1.50s linear infinite;}
+.blink-fast {animation: blinker 0.75s linear infinite;}
 @keyframes blinker {50% { opacity: 0; }}
 
 /* https://codepen.io/thetallweeks/pen/yybGra */
@@ -37,6 +38,10 @@ body {
 }
 @keyframes ellipsis {to {width: 1.25em;}}
 @-webkit-keyframes ellipsis {to {width: 1.25em;}}
+
+.time-label {
+    min-width: 120px;
+    display: inline-block;}
 
 .gray-background {
     background-color: #eee;
