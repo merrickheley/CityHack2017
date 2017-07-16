@@ -113,14 +113,19 @@ function initMap() {
 
 }
 
+function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+
 $(document).ready(function() {
 	
-	if (localStorage.getItem("arriveTime")) {
-		$('#arriveTime').text(localStorage.getItem("arriveTime"));
-	}
-	if (localStorage.getItem("leaveTime")) {
-		$('#leaveTime').text(localStorage.getItem("leaveTime"));
-	}
+	$('#arriveTime').text(localStorage.getItem("arriveTime"));
+	$('#leaveTime').text(localStorage.getItem("leaveTime"));
+	var wakeupDate = new Date(new Date("2017","06","16",localStorage.getItem("leaveTime").split(':')[0],localStorage.getItem("leaveTime").split(':')[1]) - localStorage.getItem("readyTime")*60000);
+	$('#wakeupTime').text(addZero(wakeupDate.getHours()) + ":" + addZero(wakeupDate.getMinutes()));
 
 	// Save items from the settings page
 	// from, to, readyTime, arriveRange, sleepHours, notifications
@@ -128,9 +133,12 @@ $(document).ready(function() {
 		e.preventDefault();
 		var href = $( this ).attr( "href" );
 
-		localStorage.setItem("","")
+		localStorage.setItem("from",$('#from').val());
+		localStorage.setItem("to",$('#to').val());
+		localStorage.setItem("readyTime",$('#readyTime').val().split(' ')[0]);
+		localStorage.setItem("arriveRange",$('#arriveRange').val());
+		localStorage.setItem("notifications",$('#notifications').val());
 
-		
 		location.href = href;
 	})
 
