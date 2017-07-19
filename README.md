@@ -4,9 +4,9 @@ Event: [**CityHack 2017**](http://www.aecom.com/cityhack17/) at Aecom Brisbane (
 
 Product Pitch: [**Sunrise**](#), an intelligent wake-up alarm & city-wide commuter orchestration app. Built for the **[TMR](https://www.tmr.qld.gov.au/)** prize category
 
-Validation: [Web Registration](https://merrickheley.github.io/CityHack2017/signup.html), received 42 sign-ups in 2 days. Near-100% positive responses, both in person and on social media. Positive feedback from TMR.
+Validation: **[Web Registration](https://merrickheley.github.io/CityHack2017/signup.html)**, received 42 sign-ups in 2 days. Near-100% positive responses, both in person and on social media. Positive feedback from TMR.
 
-Prototype: [Web-based app mockup](https://merrickheley.github.io/CityHack2017/settings.html)
+Prototype: **[Sunrise App Demo](https://merrickheley.github.io/CityHack2017/settings.html)** (web-based)
 
 Tech Stack: JS+JQuery, CSS+Bootstrap, HTML5
 
